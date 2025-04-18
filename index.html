@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman - Portfolio</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <button class="chat-button" onclick="toggleChat()">💬</button>
+    <div class="chat-box" id="chat-box">
+      <button onclick="navigateTo('contact')">Contact Me</button>
+      <button onclick="navigateTo('works')">Show My Works</button>
+      <button onclick="navigateTo('project-section')">Projects</button>
+      <button onclick="navigateTo('about')">About Me</button>
+    </div>
+    <header>
+      <nav>
+        <div class="left">Aman's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+            <li class="model">
+              <div class="loader">
+                <div class="box box-1">
+                  <div class="side-left"></div>
+                  <div class="side-right"></div>
+                  <div class="side-top"></div>
+                </div>
+                <div class="box box-2">
+                  <div class="side-left"></div>
+                  <div class="side-right"></div>
+                  <div class="side-top"></div>
+                </div>
+                <div class="box box-3">
+                  <div class="side-left"></div>
+                  <div class="side-right"></div>
+                  <div class="side-top"></div>
+                </div>
+                <div class="box box-4">
+                  <div class="side-left"></div>
+                  <div class="side-right"></div>
+                  <div class="side-top"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- -------demo-------- -->
+
+    <ul class="example-2">
+      <li class="icon-content">
+        <a
+          href="https://www.linkedin.com/in/aman90/"
+          aria-label="LinkedIn"
+          data-social="linkedin"
+        >
+          <div class="filled"></div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-linkedin"
+            viewBox="0 0 16 16"
+            xml:space="preserve"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+        <div class="tooltip">LinkedIn</div>
+      </li>
+      <li class="icon-content">
+        <a
+          href="https://github.com/amankr0028"
+          aria-label="GitHub"
+          data-social="github"
+        >
+          <div class="filled"></div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+            xml:space="preserve"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+        <div class="tooltip">GitHub</div>
+      </li>
+      <li class="icon-content">
+        <a
+          href="https://www.instagram.com/aman_kumar.2804?igsh=Mmt5ZHNlb2dhb2pt "
+          aria-label="Instagram"
+          data-social="instagram"
+        >
+          <div class="filled"></div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+            xml:space="preserve"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+        <div class="tooltip">Instagram</div>
+      </li>
+    </ul>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, my name is <span class="purple">Aman Kumar</span>
+          <div style="gap: 2px">I am a passionate</div>
+
+          <span id="element"></span>
+          <div class="buttons">
+            <button  class="resume-button" aria-label="Download Resume">
+              Resume
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+              
+                  stroke-linejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                ></path>
+              </svg>
+            </button>
+            <button class="btn-github">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+                  fill="currentcolor"
+
+                ></path>
+              </svg>
+              <span>View on Github</span>
+            </button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="image-removebg-preview.png" />
+        </div>
+      </section>
+      <hr />
+      </second> 
+      <section class="about">
+        <div class="heading">
+          <h1 style="font-size: 45px; color: blueviolet">About Me</h1>
+        </div>
+        <div class="text-t1">
+          <div class="text-1">
+            <span class="ab1">
+              Hi, I'm Aman Kumar a Full-Stack Web Developer. I build websites
+              and web apps using both front-end and back-end technologies. I
+              enjoy coding, solving problems, and making things work smoothly
+            </span>
+            <hr />
+            <span class="ab2">
+              Looking for a developer ? Let’s work together!
+            </span>
+            <button class="cta">
+              <span>Contact&nbsp;</span>
+              <svg viewBox="0 0 13 10" height="10px" width="15 px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="imgi0">
+            <img class="profile-image" src="image copy.png">
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="skills-section">
+        <h2 style="font-size: 45px;"> Technical Skills</h2>
+        <p>I am a full-stack web developer skilled in a wide array of frontend and backend technologies. Here are the key technologies I work with.</p>
+        <div class="skills-list">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />HTML</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />CSS</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />JavaScript</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />TypeScript</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />React</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" />Angular</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />Node.js</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" />Express</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />MongoDB</div>
+          <div class="skill"><img src="tailwindcss.svg" alt="Tailwind" />Tailwind CSS</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />C</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />C++</div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" />Postman</div>
+        </div>
+      </section>
+      <hr/>
+      <h2 style="font-size: 45px;">My Projects</h2>
+  <div class="project-section">
+    <div class="project">
+      <h3>Universal Target for Webpack</h3>
+      <p>An enhancement to Webpack that allows building a universal target compatible with Web, Node.js, and Web Workers.</p>
+      <div class="buttons">
+        <a href="#" class="github" target="_blank">GitHub</a>
+        <a href="#" class="live" target="_blank">Live Preview</a>
+      </div>
+    </div>
+    <div class="project">
+      <h3>Movie Booking App</h3>
+      <p>A full-stack movie booking application with seat selection, authentication, and admin dashboard.</p>
+      <div class="buttons">
+        <a href="#" class="github" target="_blank">GitHub</a>
+        <a href="#" class="live" target="_blank">Live Preview</a>
+      </div>
+    </div>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>My personal portfolio site built with HTML, CSS, and JavaScript, showcasing my projects and skills.</p>
+      <div class="buttons">
+        <a href="#" class="github" target="_blank">GitHub</a>
+        <a href="#" class="live" target="_blank">Live Preview</a>
+      </div>
+    </div>
+    <div class="project">
+      <h3>Chatbot UI Section</h3>
+      <p>A responsive and interactive chatbot section created with JavaScript and styled according to my portfolio's theme.</p>
+      <div class="buttons">
+        <a href="#" class="github" target="_blank">GitHub</a>
+        <a href="#" class="live" target="_blank">Live Preview</a>
+      </div>
+    </div>
+    <div class="project hidden">
+      <h3>E-commerce Dashboard</h3>
+      <p>An interactive admin dashboard for tracking orders, sales, and performance metrics with chart visualizations.</p>
+      <div class="buttons">
+        <a href="#" class="github" target="_blank">GitHub</a>
+        <a href="#" class="live" target="_blank">Live Preview</a>
+      </div>
+    </div>
+    <div class="project hidden">
+      <h3>Blog CMS</h3>
+      <p>A content management system allowing dynamic blog post creation, user authentication, and markdown support.</p>
+      <div class="buttons">
+        <a href="#" class="github" target="_blank">GitHub</a>
+        <a href="#" class="live" target="_blank">Live Preview</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="show-more-btn" onclick="toggleProjects(true)">Show More</button>
+  <button class="show-less-btn" onclick="toggleProjects(false)" style="display:none;">Show Less</button>
+
+ 
+      
+      <hr />
+      <div id="contact" class="contact-container">
+        <div class="contact-header">
+          <h2>Contact Me</h2>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Let's connect!</p>
+        </div>
+    
+        <div class="contact-info">
+          <a href="mailto:amanranchi90@gmail.com">📧 amanranchi90@gmail.com</a>
+          <a href="tel:+91-9142034375">📞 +91 9142034375</a>
+          <a href="https://www.linkedin.com/in/aman90/" target="_blank">🔗 LinkedIn</a>
+          <a href="https://github.com/amankr0028" target="_blank">💻 GitHub</a>
+        </div>
+    
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+    
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+    
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+    
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <hr/>
+
+      <footer>
+        <div class="flex">
+          <div class="first">
+            <h3>Aman's Developer Portfolio</h3>
+            <div class="card1">
+              <a class="social-link1">
+                <svg
+                  style="color: white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+              <a class="social-link2">
+                <svg
+                  viewBox="0 0 496 512"
+                  height="1em"
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                  ></path>
+                </svg>
+              </a>
+              <a class="social-link3">
+                <svg
+                  style="color: white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-discord"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+              <a class="social-link4">
+                <svg
+                  fill="#fff"
+                  viewBox="0 0 448 512"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                  ></path>
+                </svg>
+              </a>
+              <a class="social-link5">
+                <svg
+                  viewBox="0 0 16 16"
+                  class="bi bi-stack-overflow"
+                  fill="currentColor"
+                  height="16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z"
+                  ></path>
+                  <path
+                    d="M3.857 13.145h7.137v-1.428H3.857v1.428zM10.254 0 9.108.852l4.26 5.727 1.146-.852L10.254 0zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="third">
+            <ul>
+              <li>Home</li>
+              <li>Abour</li>
+              <li>Services</li>
+              <li>Projects</li>
+            </ul>
+          </div>
+          <div class="fourth">
+            <ul>
+              <li>Conatct :</li>
+              <li>
+                <a  href="amanranchi90@gmail.com:"></a>amanranchi90@gmail.com
+              </li>
+              <li>+91-9142034375</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center">
+          Copyright &#169; amanportfolio.com | All RIGHTS RESERVED
+        </div>
+      </footer>
+
+      <div class="email-section">
+        <div class="email-line"></div>
+        <span><a href="mailto:amanranchi90@gmail.com"> amanranchi90@gmail.com</a></span>
+      </div>
+
+      <!-- //Design for animation web developr// -->
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Designer", "Video Editer", " Web Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
