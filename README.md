@@ -28,7 +28,7 @@ Currently, I'm working on:
 
 I'm always open to collaboration, freelance work, or just a good tech chat.
 
-- 📧 Email: [amankr.0028@gmail.com](mailto:amankr.0028@gmail.com)
+- 📧 Email: [amanranchi90@gmail.com](mailto:amanranchi90@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/amankr0028](https://www.linkedin.com/in/amankr0028)
 - 🐙 GitHub: [github.com/amankr0028](https://github.com/amankr0028)
 
